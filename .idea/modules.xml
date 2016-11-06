@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeneralViewFactorCalculator.iml" filepath="$PROJECT_DIR$/.idea/modules/GeneralViewFactorCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeneralViewFactorCalculator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GeneralViewFactorCalculator_main.iml" group="GeneralViewFactorCalculator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeneralViewFactorCalculator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GeneralViewFactorCalculator_test.iml" group="GeneralViewFactorCalculator" />
+    </modules>
+  </component>
+</project>
