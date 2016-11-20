@@ -57,15 +57,15 @@ public class Point {
 
     @Override
     public String toString() {
-        return getX() + ", " + getY() + ", " + getZ();
+        return "(" + getX() + ", " + getY() + ", " + getZ() + ")";
     }
 
     public static Point centerOf(Point[] points) {
         double x = 0, y = 0, z = 0;
         for (Point p : points) {
-            x += p.x;
-            y += p.y;
-            z += p.z;
+            x += p.getX();
+            y += p.getY();
+            z += p.getZ();
         }
         return new Point(x / points.length, y / points.length, z / points.length);
     }
