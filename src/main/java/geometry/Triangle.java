@@ -26,4 +26,24 @@ public class Triangle {
         this.normal = normal;
     }
 
+    public Point getCenter() {
+        return Point.centerOf(vertices);
+    }
+
+    public boolean equals(Triangle other) {
+        if (!this.normal.equals(other.normal)) return false;
+        for (int index = 0; index < vertices.length; index++) {
+            if (!this.vertices[index].equals(other.vertices[index])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public double area() {
+        Vector ab = vertices[1].minus(vertices[0]);
+        Vector ac = vertices[2].minus(vertices[0]);
+        return .5 * ab.magnitude() * ab.magnitude() * Math.sin(ab.angleBetween(ac));
+    }
+
 }

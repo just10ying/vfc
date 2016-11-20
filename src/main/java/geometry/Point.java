@@ -70,4 +70,8 @@ public class Point {
         return new Point(x / points.length, y / points.length, z / points.length);
     }
 
+    public boolean equals(Point other) {
+        return this.x == other.x && this.y == other.y && this.z == other.z;
+    }
+
 }

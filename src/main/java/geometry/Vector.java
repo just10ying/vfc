@@ -124,4 +124,12 @@ public class Vector {
         return "[" + this.getX() + ", " + this.getY() + ", " + this.getZ() + "]";
     }
 
+    public boolean equals(Vector other) {
+        return origin.equals(other.origin) && this.x == other.x && this.y == other.y && this.z == other.z;
+    }
+
+    public double angleBetween(Vector other) {
+        return Math.acos(this.dotProduct(other) / (this.magnitude() * other.magnitude()));
+    }
+
 }
